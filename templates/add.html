@@ -1,0 +1,77 @@
+$def with (name, personalInfo)
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+        <title>añadir</title>
+    </head>
+
+    <body>
+        <div class="header">
+            <h4>Añadir persona a la base de datos:</h4>
+            <p>Datos necesarios: <br>
+                <ul>
+                    <li>Nombre</li>
+                    <li>Apellido</li>
+                    <li>Tel</li>
+                    <li>Dirección</li>
+                </ul><br>
+            <strong>El resto es opcional, pero completalo por las dudas</strong>
+            </p>
+        </div>
+    <div class="cointainer">
+        
+        <table class="table">
+        <thead>
+          <tr>
+            <th>Formulario</th>
+           
+          </tr>
+        </thead>
+        <tbody>
+            <form action="/add" method = "POST">
+                <tr>
+                    <td>Nombre</td>
+                    <td><input type="text" name = "name"></td>        
+                </tr>
+                <tr>
+                    <td>Apellido</td>
+                    <td><input type="text" name="surname"></td>
+                </tr>
+                <tr>
+                    <td>Empresa</td>
+                    <td><input type="text" name="empresa"></td>                   
+                </tr>
+                <tr>
+                    <td>Dirección</td>
+                    <td><input type="text" name="dir" ></td>
+                </tr>
+                <tr>
+                    <td>Tel Trabajo</td>
+                    <td><input type="phone" name="trabajo"></td>
+                </tr>
+                <tr>
+                    <td>Tel Casa</td>
+                    <td><input type="phone" name="casa"></td>
+                
+                </tr>
+                <tr>
+                    <td>Tel Otro</td>
+                    <td><input type="phone" name="otro"></td>
+                
+                </tr>
+                <tr ><td scope="row" align = center><button type="submit" class="btn btn-default">Submit</button></td></tr>
+          </form>
+        </tbody>
+      </table> 
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
